@@ -1,58 +1,64 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Training Course Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <a href="#" class="logo">WebTutor</a>
-        <div class="nav-links">
-            <a href="#courses">Courses</a>
-            <a href="#lessons">Lessons</a>
-            <a href="#pricing">Pricing</a>
-        </div>
-        <a href="#courses" class="button">Get Started</a>
-    </nav>
+    <a href="#courses" class="skip-link">Skip to courses</a>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">WebTutor</a>
+            <div class="nav-links">
+                <a href="#courses">Courses</a>
+                <a href="#lessons">Lessons</a>
+                <a href="#pricing">Pricing</a>
+            </div>
+            <a href="#courses" class="button">Get Started</a>
+        </nav>
+    </header>
 
     <main>
         <section class="hero">
             <div>
                 <h1>Learn Web Dev Skills</h1>
-                <p>Enroll in courses and build your career web development .</p>
+                <p>Enroll in courses and build your career in web development.</p>
                 <a href="#courses" class="button">Enroll Courses</a>
             </div>
-            <img src="https://static.vecteezy.com/system/resources/thumbnails/072/929/774/small/a-finger-touches-a-digital-screen-displaying-a-web-development-interface-with-icons-representing-coding-cloud-computing-database-and-website-design-symbolizing-innovation-and-technological-advancement-photo.jpg" alt="Web development workspace">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/072/929/774/small/a-finger-touches-a-digital-screen-displaying-a-web-development-interface-with-icons-representing-coding-cloud-computing-database-and-website-design-symbolizing-innovation-and-technological-advancement-photo.jpg" alt="Digital screen displaying web development concepts" width="900" height="600">
         </section>
 
         <section class="courses" id="courses">
             <h2>Our Courses</h2>
             <div class="course-grid">
                 <article class="course-card">
-                    <img src="https://miro.medium.com/1*lJ32Bl-lHWmNMUSiSq17gQ.png">
+                    <img src="https://miro.medium.com/1*lJ32Bl-lHWmNMUSiSq17gQ.png" alt="HTML and CSS course illustration" width="600" height="375">
                     <div class="card-content">
                         <h3>HTML and CSS</h3>
-                        <p>Learn website structure and styling through HTML & CSS.</p>
+                        <p>Learn website structure and styling through HTML and CSS.</p>
                         <a href="#lessons">View Course</a>
                     </div>
                 </article>
 
                 <article class="course-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb4KNHK6APCWZVpeCtkZcDm6uJRHnhDLPuNvNMr924joaYWaREmDgLVzQ&s=10" alt="JavaScript course">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb4KNHK6APCWZVpeCtkZcDm6uJRHnhDLPuNvNMr924joaYWaREmDgLVzQ&s=10" alt="JavaScript course illustration" width="600" height="375">
                     <div class="card-content">
                         <h3>JavaScript</h3>
-                        <p>Learn interactivity in website through JS.</p>
+                        <p>Learn to add interactivity to websites using JavaScript.</p>
                         <a href="#lessons">View Course</a>
                     </div>
                 </article>
 
                 <article class="course-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBxgQ1E_euJvDjjWW3bmD7slDq7VRFOd2RJ-0LmmUwkZp7JKLHjW2Dy8w9&s=10" alt="React course">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBxgQ1E_euJvDjjWW3bmD7slDq7VRFOd2RJ-0LmmUwkZp7JKLHjW2Dy8w9&s=10" alt="React course illustration" width="600" height="375">
                     <div class="card-content">
                         <h3>React</h3>
-                        <p>Learn to use reusable components through React.</p>
+                        <p>Learn to build interfaces using reusable React components.</p>
                         <a href="#lessons">View Course</a>
                     </div>
                 </article>
@@ -60,20 +66,22 @@
         </section>
 
         <section class="lessons" id="lessons">
-            <div>
+            <div class="lesson-content">
                 <h2>Course Lessons</h2>
-                <article class="lesson">
-                    <h3>Lesson 1: HTML Basics</h3>
-                    <p>Learn HTML elements, links, images, and forms.</p>
-                </article>
-                <article class="lesson">
-                    <h3>Lesson 2: CSS Basics</h3>
-                    <p>Learn selectors, colors, spacing, and typography.</p>
-                </article>
-                <article class="lesson">
-                    <h3>Lesson 3: Responsive Layout</h3>
-                    <p>Practice Flexbox, Grid, and media queries.</p>
-                </article>
+                <div class="lesson-list">
+                    <article class="lesson">
+                        <h3>Lesson 1: HTML Basics</h3>
+                        <p>Learn HTML elements, links, images, and forms.</p>
+                    </article>
+                    <article class="lesson">
+                        <h3>Lesson 2: CSS Basics</h3>
+                        <p>Learn selectors, colors, spacing, and typography.</p>
+                    </article>
+                    <article class="lesson">
+                        <h3>Lesson 3: Responsive Layout</h3>
+                        <p>Practice Flexbox, Grid, and media queries.</p>
+                    </article>
+                </div>
             </div>
 
             <aside class="sidebar">
@@ -87,7 +95,7 @@
 
         <section class="pricing" id="pricing">
             <h2>Course Plans</h2>
-            <div class="pricing-grid">
+            <div class="course-grid">
                 <article class="price-card">
                     <h3>Basic</h3>
                     <p class="price">Free</p>
@@ -97,7 +105,7 @@
 
                 <article class="price-card">
                     <h3>Premium</h3>
-                    <p class="price">$29/month</p>
+                    <p class="price">5000 pkr</p>
                     <p>Access to all lessons and projects.</p>
                     <a href="#courses" class="button">Choose Plan</a>
                 </article>
@@ -121,7 +129,7 @@
                 <h3>Quick Links</h3>
                 <a href="#lessons">Lessons</a>
                 <a href="#pricing">Pricing</a>
-                <a href="mailto:hello@example.com">Contact</a>
+                <a href="mailto:contactus@gmail.com">Contact</a>
             </div>
         </div>
         <p class="copyright">© 2026 WebTutor</p>
