@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: white;
+    background-color: black;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus-visible {
+    outline: 3px solid greenyellow;
+    outline-offset: 4px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 6%;
+}
+
+.logo {
+    color: green;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.nav-links a, .course-card a {
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .course-card a:hover {
+    color: green;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    border-radius: 6px;
+    background: green;
+    color: white;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.button:hover {
+    background: greenyellow;
+    color: green;
+    transform: translateY(-3px);
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 6%;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.2;
+}
+
+.hero p {
+    max-width: 35rem;
+}
+
+.hero img, .course-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.courses, .pricing {
+    padding: 3rem 6%;
+}
+
+h2 {
+    font-size: clamp(1.5rem, 4vw, 2.3rem);
+}
+
+.courses > h2, .pricing > h2 {
+    text-align: center;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 1.5rem;
+}
+
+.course-card {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px #0000001a;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content a {
+    color: green;
+    font-weight: bold;
+}
+
+.lessons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 6%;
+}
+
+.lesson {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.lesson:hover {
+    transform: translateX(4px);
+}
+
+.sidebar {
+    align-self: start;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.price-card {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px #0000001a;
+}
+
+.price {
+    color: green;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+footer {
+    padding: 2rem 6%;
+    background: green;
+    color: white;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+    gap: 2rem;
+}
+
+.footer-grid a {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #cbd5e1;
+}
+
+.footer-grid a:hover {
+    color: white;
+}
+
+.copyright {
+    padding-top: 1rem;
+    border-top: 1px solid #475569;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .lessons {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        width: 100%;
+    }
+}
